@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteFlow Features - Your All-in-One Workspace</title>
+    <style>
+           .logo-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the parent element's color */
+    display: inline-block; /* Ensure it behaves like a block element */
+}
+
+.logo {
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold if desired */
+    cursor: default; /* Default cursor when not hovered */
+}
+
+/* Show pointer cursor on hover */
+.logo-link:hover .logo {
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .features-header {
+            text-align: center;
+            padding: 60px 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .features-subtitle {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .feature {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .feature-content {
+            flex: 1;
+        }
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .feature p {
+            margin-bottom: 20px;
+        }
+        .feature-image {
+            flex: 1;
+            text-align: center;
+        }
+        .feature-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .cta-section {
+            text-align: center;
+            padding: 60px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #0070f3;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0051a8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-link"> <!-- Change 'index.html' to your home page URL -->
+                <div class="logo">NoteFlow</div>
+            </a>
+            <div class="nav-links">
+                <a href="feature.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="features-header">
+            <h1>Discover NoteFlow's Powerful Features</h1>
+            <p class="features-subtitle">Streamline your workflow, boost productivity, and collaborate seamlessly with NoteFlow's intuitive tools.</p>
+        </section>
+
+        <section class="feature">
+            <div class="feature-content">
+                <h2>Smart Notes</h2>
+                <p>Create rich, interactive notes that adapt to your thinking process. Embed images, code snippets, and more to capture your ideas in their fullest form.</p>
+                <ul>
+                    <li>Rich text editing</li>
+                    <li>Code syntax highlighting</li>
+                    <li>Image and file embedding</li>
+                    <li>Customizable templates</li>
+                </ul>
+            </div>
+            <div class="feature-image">
+                <img src="/api/placeholder/400/300" alt="Smart Notes feature">
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature-image">
+                <img src="/api/placeholder/400/300" alt="Real-time Collaboration feature">
+            </div>
+            <div class="feature-content">
+                <h2>Real-time Collaboration</h2>
+                <p>Work together with your team in real-time, no matter where you are. See changes as they happen and keep everyone on the same page.</p>
+                <ul>
+                    <li>Simultaneous editing</li>
+                    <li>Comments and discussions</li>
+                    <li>User presence indicators</li>
+                    <li>Version history</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature-content">
+                <h2>Powerful Organization</h2>
+                <p>Keep your work structured and easily accessible with NoteFlow's flexible organization tools.</p>
+                <ul>
+                    <li>Nested pages and subpages</li>
+                    <li>Tags and custom properties</li>
+                    <li>Advanced search capabilities</li>
+                    <li>Customizable dashboards</li>
+                </ul>
+            </div>
+            <div class="feature-image">
+                <img src="/api/placeholder/400/300" alt="Powerful Organization feature">
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature-image">
+                <img src="/api/placeholder/400/300" alt="Cross-platform Sync feature">
+            </div>
+            <div class="feature-content">
+                <h2>Cross-platform Sync</h2>
+                <p>Access your notes and projects from anywhere, on any device. NoteFlow keeps everything in sync, so you're always up to date.</p>
+                <ul>
+                    <li>Web, desktop, and mobile apps</li>
+                    <li>Offline mode</li>
+                    <li>Automatic syncing</li>
+                    <li>Secure cloud storage</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to boost your productivity?</h2>
+            <p>Join thousands of teams and individuals who trust NoteFlow to organize their work and ideas.</p>
+            <a href="#" class="cta-button">Get Started for Free</a>
+        </section>
+    </main>
+</body>
+</html>

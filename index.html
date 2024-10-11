@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteFlow - Your All-in-One Workspace</title>
+    <style>
+      .logo-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the parent element's color */
+    display: inline-block; /* Ensure it behaves like a block element */
+}
+
+.logo {
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold if desired */
+    cursor: default; /* Default cursor when not hovered */
+}
+
+/* Show pointer cursor on hover */
+.logo-link:hover .logo {
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #0070f3;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0051a8;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+        .feature {
+            flex-basis: 30%;
+            text-align: center;
+        }
+        .feature img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-link"> <!-- Change 'index.html' to your home page URL -->
+                <div class="logo">NoteFlow</div>
+            </a>
+            <div class="nav-links">
+                <a href="feature.html">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Your All-in-One Workspace</h1>
+            <p class="subtitle">Write, plan, collaborate, and get organized. NoteFlow is all you need.</p>
+            <a href="login.html" class="cta-button">Get Started - It's Free</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="/api/placeholder/64/64" alt="Notes icon">
+                <h3>Smart Notes</h3>
+                <p>Create rich, interactive notes with ease. Embed content, code, and more.</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/64/64" alt="Collaboration icon">
+                <h3>Real-time Collaboration</h3>
+                <p>Work together seamlessly with your team, in real-time or asynchronously.</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/64/64" alt="Organization icon">
+                <h3>Powerful Organization</h3>
+                <p>Keep everything organized with nested pages, tags, and powerful search.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
