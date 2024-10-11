@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteFlow - Your Workspace</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #0070f3, #00a8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+        }
+        .nav-item {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .nav-item:hover {
+            background-color: #e0e0e0;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .user-menu {
+            position: relative;
+        }
+        .user-menu-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .quick-actions {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .action-button {
+            padding: 10px 15px;
+            background-color: #0070f3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .action-button:hover {
+            background-color: #0051a8;
+        }
+        .recent-pages, .shared-with-you {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        .page-list {
+            list-style-type: none;
+        }
+        .page-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .page-icon {
+            margin-right: 10px;
+            color: #0070f3;
+        }
+        .page-title {
+            flex-grow: 1;
+        }
+        .page-date {
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">NoteFlow</div>
+            <nav>
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">All Pages</a>
+                <a href="#" class="nav-item">Shared with Me</a>
+                <a href="#" class="nav-item">Trash</a>
+                <a href="#" class="nav-item">Settings</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search your notes...">
+                </div>
+                <div class="user-menu">
+                    <button class="user-menu-button">John Doe ▼</button>
+                </div>
+            </header>
+            <section class="quick-actions">
+                <button class="action-button">+ New Page</button>
+                <button class="action-button">+ New Database</button>
+                <button class="action-button">Import</button>
+            </section>
+            <section class="recent-pages">
+                <h2>Recent Pages</h2>
+                <ul class="page-list">
+                    <li class="page-item">
+                        <span class="page-icon">📄</span>
+                        <span class="page-title">Project Ideas</span>
+                        <span class="page-date">Updated 2 hours ago</span>
+                    </li>
+                    <li class="page-item">
+                        <span class="page-icon">📊</span>
+                        <span class="page-title">Q2 Report</span>
+                        <span class="page-date">Updated yesterday</span>
+                    </li>
+                    <li class="page-item">
+                        <span class="page-icon">📝</span>
+                        <span class="page-title">Meeting Notes</span>
+                        <span class="page-date">Updated 3 days ago</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="shared-with-you">
+                <h2>Shared with You</h2>
+                <ul class="page-list">
+                    <li class="page-item">
+                        <span class="page-icon">👥</span>
+                        <span class="page-title">Team Roadmap</span>
+                        <span class="page-date">Shared by Jane Smith</span>
+                    </li>
+                    <li class="page-item">
+                        <span class="page-icon">📁</span>
+                        <span class="page-title">Design Assets</span>
+                        <span class="page-date">Shared by Design Team</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
